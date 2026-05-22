@@ -1,0 +1,16 @@
+name: "First"
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  greet: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: ask
+        run: echo "How are you"
+
+      - name: greet
+        run: echo "Good evening sir"
+        
